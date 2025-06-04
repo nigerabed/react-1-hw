@@ -33,7 +33,8 @@ export const Destinations = () => {
     // Implement this function
     // If you press the "ADD PLANET" the selected planet should display "SELECTED"
     // And the counter should update, how many planets are selected (numberOfPlanets)
-    console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
+
+     console.log(`You seleceted the following planet: ${name}, with the index of ${index}`);
   }
 
   return (
@@ -45,6 +46,7 @@ export const Destinations = () => {
           {/* TASK - React 1 week 2 */}
           {/* Display the number Of selected planets */}
           {/* Display the "no planets" message if it is empty! */}
+         
           <p>No planets in wishlist :(</p>
           <p>You have {numberOfPlanets} in your wishlist</p>
           <b>List coming soon after lesson 3!</b>

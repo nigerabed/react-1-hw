@@ -3,3 +3,107 @@
   width: 100vw;
   height: 100vh;
 }
+
+.crewSection {
+  background-image: url("/crew/background-crew-desktop.jpg");
+  object-fit: cover;
+}
+
+.crewImgDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 1.5em;
+}
+
+.crewImgDiv img {
+  height: 10em;
+  width: 15em;
+  object-fit: contain;
+  border: 1px solid white;
+  margin-right: 1em;
+}
+
+.headingCrew {
+  margin-left: 1em;
+  padding-top: 1em;
+}
+
+.headingCrew h6 {
+  font-size: small;
+}
+.headingCrew p {
+  font-size: 0.8em;
+}
+.crewText {
+  font-size: small;
+}
+
+.imgName p {
+  font-size: 0.8em;
+}
+
+/* Ourvalues */
+.valueHeader {
+  border-bottom: 2px solid gray;
+  margin: 2em;
+}
+.valueHeader p {
+  font-size: 0.7em;
+  margin-bottom: 2em;
+}
+.valueHeader h2 {
+  font-size: 2em;
+}
+.ourValues {
+  display: flex;
+  margin: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.valueSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  padding: 1em;
+}
+
+/* Partner section */
+.partnerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em;
+}
+
+.headingPartners h6 {
+  font-size: small;
+}
+.headingPartners p {
+  font-size: 1.3em;
+}
+
+.partnersList {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 80%;
+  gap: 10px;
+  padding: 20px;
+}
+
+.partner img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.partnersContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2em;
+}

@@ -1,3 +1,6 @@
+import OurCrew from './OurCrew';
+import OurPartners from './OurPartners';
+import OurValues from './OurValues';
 import styles from './page.module.css';
 
 // TASK - React 1 week 1
@@ -5,45 +8,13 @@ import styles from './page.module.css';
 // OurValues.js, OurCrew.js, OurPartners.js should live in this folder
 // import and use the components from the newly created files
 
-const OurValues = () => {
-  // TASK - React 1 week 1
-  // Create the "Our Values" section
-  // Use the descriptions provided in /app/about_us/README.md
-  // Some inspiration ideas found in /data/inspiration_about_us
-  return (
-    <p> ADD OUR VALUES HERE </p>
-  );
-};
-
-const OurCrew = () => {
-  // TASK - React 1 week 1
-  // Create the "Our Crew section"
-  // Use the descriptions provided in /app/about_us/README.md
-  // Use the pictures from /public/crew
-  // Some inspiration ideas found in /data/inspiration_about_us
-  return (
-    <p> ADD OUR CREW HERE </p>
-  );
-}
-
-const OurPartners = () => {
-  // TASK - React 1 week 1
-  // Create the "Our Crew section"
-  // Use the descriptions provided in /app/about_us/README.md
-  // Use the pictures from /public/crew
-  // Some inspiration ideas found in /data/inspiration_about_us
-  return (
-    <p> ADD OUR Partners HERE </p>
-  );
-}
-
 
 export const Crew = () => {
   return (
     <div className="fullBGpicture">
       <main className="mainContent">
         <h1>About us</h1>
-        <section className="card">
+        <section className={styles.card}>
           <h2>Our Values</h2>
           <OurValues/>
         </section>
@@ -51,9 +22,10 @@ export const Crew = () => {
           <h2>The crew</h2>
           <OurCrew/>
         </section>
-
-         {/* TASK - React 1 week 1 */}
-         {/* Add in the "OurPartners" component here */}
+        <section className="card">
+          <h2>Our partners</h2>
+          <OurPartners/>
+        </section>
       </main>
     </div>
   );

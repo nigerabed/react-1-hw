@@ -11,6 +11,7 @@
   max-height: var(--header-height);
   align-items: center;
   z-index: 10;
+  background-color: black;
 }
 
 .decorativeLine {
