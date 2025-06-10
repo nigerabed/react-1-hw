@@ -3,16 +3,6 @@
 import { useState } from "react";
 import styles from "./destination.module.css";
 
-// export default function AddWishlistItem({ name, onRemove, thumbnail }) {
-//   return (
-//     <div className={styles.wishlistItem}>
-//       <img className={styles.wishlistItemThumbnail} src={thumbnail} alt="" />
-//       <b>{name.toUpperCase()}</b>
-//       <button onClick={onRemove}>remove</button>
-//     </div>
-//   );
-// }
-
 export const AddWishlistItem = ({
   onAddWishlistItem,
   name,

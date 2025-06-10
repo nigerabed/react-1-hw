@@ -1,22 +1,9 @@
 "use client";
 
 import { useState } from "react";
-
 import styles from "@/components/destination/destination.module.css";
 import { AddWishlistItem } from "@/components/destination/AddWishlistItem";
 import PlanetCard from "@/components/destination/PlanetCard";
-
-// TASK - React 1 week 2
-// Move this to its own file
-// function AddWishlistItem({ name, onRemove, thumbnail }) {
-//   return (
-//     <div className={styles.wishlistItem}>
-//       <img className={styles.wishlistItemThumbnail} src={thumbnail} alt="" />
-//       <b>{name.toUpperCase()}</b>
-//       <button onClick={onRemove}>remove</button>
-//     </div>
-//   );
-// }
 
 export const Destinations = () => {
   const [selectedPlanets, onAddPlanet] = useState([]);
@@ -29,18 +16,19 @@ export const Destinations = () => {
   const onAddOrRemovePlanet = (name, index) => {
     setIsPlanetSelected((prevState) => !prevState);
     setNumberOfPlanets((prevCount) => {
-      // Checking if the planet is already selected
-     
+      // Check if the planet is already selected
       if (isPlanetSelected === true) {
         // If it is selected, remove it and decrease the count
-        onAddPlanet((prevPlanets) => prevPlanets.filter((planet) => planet !== name));
+        onAddPlanet((prevPlanets) =>
+          prevPlanets.filter((planet) => planet !== name)
+        );
         return prevCount - 1;
       } else {
         // If it is not selected, add it and increase the count
         onAddPlanet((prevPlanets) => [...prevPlanets, name]);
         return prevCount + 1;
       }
-    })
+    });
     // TASK - React 1 week 2
     // Implement this function
     // If you press the "ADD PLANET" the selected planet should display "SELECTED"
@@ -118,7 +106,8 @@ export const Destinations = () => {
             with vast deserts, towering volcanoes, and the deepest canyon in
             the solar system. As humanity’s next frontier, Mars invites us
             to dream of colonization and the possibilities of life beyond
-            Earth."            isPlanetSelected={isPlanetSelected}
+            Earth."
+            isPlanetSelected={isPlanetSelected}
             onAddOrRemovePlanet={onAddOrRemovePlanet}
           />
           <PlanetCard
@@ -144,7 +133,6 @@ export const Destinations = () => {
             isPlanetSelected={isPlanetSelected}
             onAddOrRemovePlanet={onAddOrRemovePlanet}
           />
-          
         </section>
       </main>
     </div>
