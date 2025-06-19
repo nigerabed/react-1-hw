@@ -22,7 +22,7 @@ export default function PlanetCard({
     </div>
     <button
       className="roundButton"
-      onClick={() => onAddOrRemovePlanet(name, index)}
+      onClick={() => onAddOrRemovePlanet(name)}
     >
       {isPlanetSelected ? "REMOVE" : "ADD PLANET"}
     </button>
